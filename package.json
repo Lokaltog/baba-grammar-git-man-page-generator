@@ -1,6 +1,6 @@
 {
   "name": "baba-grammar-git-man-page-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Git man page generator grammar for Baba.",
   "homepage": "https://git-man-page-generator.lokaltog.net/",
   "repository": {

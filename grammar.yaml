@@ -120,7 +120,6 @@ expose:
   paragraph: Paragraph
   command-action: Command action
   command-description: Command description
-  adverb.synonym.immediately: Test
 variable:
   command-verb: '{verb.common}'
   command-noun: '{noun.git}'
