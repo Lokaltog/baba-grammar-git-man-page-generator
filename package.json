@@ -1,0 +1,19 @@
+{
+  "name": "baba-grammar-git-man-page-generator",
+  "version": "0.0.1-alpha",
+  "description": "Git man page generator",
+  "homepage": "https://git-man-page-generator.lokaltog.net/",
+  "author": {
+    "name": "Kim Silkebækken",
+    "email": "kim@silkebaekken.no",
+    "web": "https://silkebaekken.no/"
+  },
+  "main": "./grammar.json",
+  "scripts": {
+    "compile": "js-yaml grammar.yaml | node -p 'JSON.stringify(JSON.parse(fs.readFileSync(0).toString()))' > ./grammar.json",
+    "prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "js-yaml": "^3.10.0"
+  }
+}
