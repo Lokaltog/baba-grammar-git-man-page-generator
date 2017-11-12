@@ -3,7 +3,7 @@
 @use 'baba-grammar-common/transforms/common'
 
 sentence {
-  @expose 'Sentence'
+  @expose 'sentence'
   sentences [
     "<condition:common.uppercase-first>, <statement>.",
     "<condition:common.uppercase-first>, <statement>, <conclusion>.",
@@ -13,7 +13,7 @@ sentence {
 }
 
 paragraph {
-  @expose 'Paragraph'
+  @expose 'paragraph'
   paragraphs [
     "<sentence> <sentence>",
     "<sentence> <sentence> <sentence>",
@@ -152,3 +152,11 @@ option-description [
   "use <noun.git> to <verb.git> <git-path> to <verb.git:verb.tense-past:common.prepend-an> <noun.git>",
   "with<'out'?> this <noun.synonym.option>, <current-command-name> <command-option> <verb.git:verb.tense-present> <noun.git:noun.plural> that <verb.git> the <verb.synonym.supply:verb.tense-past> <noun.git:noun.plural>",
 ]
+
+misc-exposed {
+    noun-git { @expose 'noun.git' noun.git }
+    verb-git { @expose 'verb.git' verb.git }
+    command-action { @expose 'command-action' command-action }
+    command-description { @expose 'command-action' command-description }
+    command-option-raw { @expose 'command-option-raw' command-option-raw }
+}
