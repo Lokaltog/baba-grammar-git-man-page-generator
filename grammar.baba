@@ -5,11 +5,15 @@
 @export('sentence', sentence)
 @export('paragraph', paragraph)
 
-@export('noun.git', noun.git)
-@export('verb.git', verb.git)
-@export('command-action', command-action)
-@export('command-action', command-description)
-@export('command-option-raw', command-option-raw)
+@export('gitNoun', noun.git)
+@export('gitVerb', verb.git)
+@export('commandAction', command-action)
+@export('commandDescription', command-description)
+@export('commandOptionRaw', command-option-raw)
+
+# Variables
+$command-noun [ "<noun.git>" ]
+$command-verb [ "<verb.git>" ]
 
 sentence [
 	"<condition:common.uppercase-first>, <statement>.",
@@ -90,18 +94,14 @@ preposition {
 
 determiner-prefix [ 'pre-', 'post-', 'all ', 'any ', '' ]
 determiner [
-		"<determiner-prefix><verb.git:verb.tense-past>"+5,
-		all, the, the most recent
+	"<determiner-prefix><verb.git:verb.tense-past>"+5,
+	all, the, the most recent
 ]
 
 subject [
 	the user,
 	"the <command-name> command"+5,
 ]
-
-# Variables
-command-noun [ "<noun.git>" ]
-command-verb [ "<verb.git>" ]
 
 current-command-name-raw [ "git-<$command-verb>-<$command-noun>" ]
 current-command-name [ "\<code><current-command-name-raw>\</code>" ]
