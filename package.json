@@ -19,7 +19,7 @@
     "prepare": "npm run compile"
   },
   "devDependencies": {
-    "baba-core": "^0.2.0",
-    "baba-grammar-common": "^1.1.0"
+    "baba-core": "^0.3.0",
+    "baba-grammar-common": "^1.2.0"
   }
 }
