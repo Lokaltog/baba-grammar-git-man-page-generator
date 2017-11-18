@@ -44,7 +44,7 @@ verb {
 noun {
 	git [archive, area, base, branch, change, commit, file, head, history, index, log, object, origin, pack, path, ref, remote, stage, stash, submodule, subtree, tag, tip, tree, upstream]
 	locations [downstream, local, remote, upstream]
-	location ["<<'non-'?>verb.git:verb.tense-past' '?><noun.locations>"]
+	location ["<<'non-'?>verb.git:verb.tense.past' '?><noun.locations>"]
 	synonym {
 		failure [failure, error]
 		option [option, argument, flag]
@@ -68,7 +68,7 @@ adverb {
 	synonym {
 		immediately [
 			'immediately',
-			"<preposition.time> <verb.prefix><verb.process:verb.tense-present-participle>"+5,
+			"<preposition.time> <verb.prefix><verb.process:verb.tense.present-participle>"+5,
 		]
 		previously [previously, earlier, formerly, once]
 		sometimes [when appropriate, "in <determiner> cases"]
@@ -94,7 +94,7 @@ preposition {
 
 determiner-prefix [ 'pre-', 'post-', 'all ', 'any ', '' ]
 determiner [
-	"<determiner-prefix><verb.git:verb.tense-past>"+5,
+	"<determiner-prefix><verb.git:verb.tense.past>"+5,
 	all, the, the most recent
 ]
 
@@ -109,13 +109,13 @@ command-name-raw "git-<verb.common>-<noun.git>"
 command-name "\<code><command-name-raw>\</code>"
 command-option-raw "--<<verb.common>'-'?><verb.common>-<noun.git>"
 command-option "\<code><command-option-raw>\</code>"
-command-action "<$command-verb> <noun.location> <$command-noun:noun.plural> <preposition.position> <determiner> <verb.git:verb.tense-past> <located-noun:noun.plural>"
-command-description "<$command-verb:verb.tense-present> <noun.location> <$command-noun:noun.plural> <preposition.position> <determiner> <verb.git:verb.tense-past> <located-noun:noun.plural>."
+command-action "<$command-verb> <noun.location> <$command-noun:noun.plural> <preposition.position> <determiner> <verb.git:verb.tense.past> <located-noun:noun.plural>"
+command-description "<$command-verb:verb.tense.present> <noun.location> <$command-noun:noun.plural> <preposition.position> <determiner> <verb.git:verb.tense.past> <located-noun:noun.plural>."
 
 git-path-raw [ "<noun.git:noun.plural>/<noun.git:noun.plural>/" ]
 git-path [ "\<code><git-path-raw>\</code>" ]
 
-multiple-nouns ["<determiner> <verb.git:verb.tense-past> <noun.git:noun.plural>"]
+multiple-nouns ["<determiner> <verb.git:verb.tense.past> <noun.git:noun.plural>"]
 located-noun ["<noun.location' '?><noun.git>"]
 constant-noun-prefix [new, old, this, other, remote, local]
 constant-noun-constant ["<verb.common>_<constant-noun-prefix'_'?><noun.git>"]
@@ -125,31 +125,31 @@ constant-noun [
 ]
 
 condition [
-	"<conjunction.conditional> <constant-noun> is <'not '?><verb.git:verb.tense-past>",
-	"<conjunction.conditional> <command-name> <verb.git:verb.tense-present> <noun.git:common.prepend-an>",
+	"<conjunction.conditional> <constant-noun> is <'not '?><verb.git:verb.tense.past>",
+	"<conjunction.conditional> <command-name> <verb.git:verb.tense.present> <noun.git:common.prepend-an>",
 ]
 conclusion "<conjunction.conclusion> <statement>"
 statement [
-	"<constant-noun> is <verb.git:verb.tense-past> to <verb.git> the <noun.git> of <determiner> <noun.git:noun.plural> <preposition.position> the <noun.git>",
-	"<current-command-name> <command-option> <verb.synonym.will> <verb.synonym.perform> <adjective.git-action:common.prepend-an> <command-name> before <<verb.git:verb.tense-present-participle' the 'noun.git> | 'doing anything else'>",
-	"<multiple-nouns> are <verb.git:verb.tense-past> to <constant-noun> by <command-name>",
-	"the same set of <noun.git:noun.plural> would <adverb.synonym.sometimes' '?>be <verb.git:verb.tense-past> to <adjective.git-action:common.prepend-an> <noun.git>",
-	"<multiple-nouns> that were <adverb.synonym.previously> <verb.git:verb.tense-past> <preposition.position> the <adjective.git-action> <noun.git:noun.plural> are <verb.git:verb.tense-past> to <adjective.git-action:common.prepend-an> <noun.git>",
-	"<verb.git:verb.tense-past:common.prepend-an> <noun.synonym.failure> <verb.synonym.will> prevent <adjective.git-action> <verb.git:verb.tense-present-participle> of <multiple-nouns>",
+	"<constant-noun> is <verb.git:verb.tense.past> to <verb.git> the <noun.git> of <determiner> <noun.git:noun.plural> <preposition.position> the <noun.git>",
+	"<current-command-name> <command-option> <verb.synonym.will> <verb.synonym.perform> <adjective.git-action:common.prepend-an> <command-name> before <<verb.git:verb.tense.present-participle' the 'noun.git> | 'doing anything else'>",
+	"<multiple-nouns> are <verb.git:verb.tense.past> to <constant-noun> by <command-name>",
+	"the same set of <noun.git:noun.plural> would <adverb.synonym.sometimes' '?>be <verb.git:verb.tense.past> to <adjective.git-action:common.prepend-an> <noun.git>",
+	"<multiple-nouns> that were <adverb.synonym.previously> <verb.git:verb.tense.past> <preposition.position> the <adjective.git-action> <noun.git:noun.plural> are <verb.git:verb.tense.past> to <adjective.git-action:common.prepend-an> <noun.git>",
+	"<verb.git:verb.tense.past:common.prepend-an> <noun.synonym.failure> <verb.synonym.will> prevent <adjective.git-action> <verb.git:verb.tense.present-participle> of <multiple-nouns>",
 	"<subject> <verb.synonym.will> <verb.git> <determiner> <noun.git:noun.plural> <conjunction.and-or> run <command-name> <command-option> instead",
 	"to <verb.git> <adjective.git-action:common.prepend-an> <constant-noun> <conjunction.and-or> <verb.git> the working <noun.git:noun.plural>, use the command <command-name> <command-option>",
-	"the <noun.git> to be <verb.git:verb.tense-past> can be <verb.synonym.supply:verb.tense-past> in several ways",
-	"the <command-option> <noun.synonym.option> can be used to <verb.git> <noun.git:common.prepend-an> for the <noun.git> that is <verb.git:verb.tense-past> by <adjective.git-action:common.prepend-an> <noun.git>",
-	"any <verb.git:verb.tense-present-participle> of <noun.git:common.prepend-an> that <verb.git:verb.tense-present> <noun.git:common.prepend-an> <adverb.synonym.immediately> after can be <verb.git:verb.tense-past> with <command-name>",
-	"after <verb.git:verb.tense-present-participle> <noun.git:noun.plural> to any <noun.git:noun.plural>, <subject> can <verb.git> the <noun.git> of the <noun.git:noun.plural>",
-	"after <current-command-name:common.prepend-an> (<verb.git:verb.tense-past> by <command-name><' 'conjunction.and-or' 'command-name?>) <verb.git:verb.tense-present> <noun.git:common.prepend-an>, <adverb.synonym.cleanly> <verb.git:verb.tense-past> <noun.git:noun.plural> are <verb.git:verb.tense-past> for <subject>, and <noun.git:noun.plural> that were <verb.git:verb.tense-past> during <verb.git:verb.tense-present-participle> are left in <verb.git:verb.tense-past:common.prepend-an> state",
-	"<multiple-nouns> <verb.git:verb.tense-past> by <noun.git:noun.plural> in the <located-noun>, but that <adverb.synonym.sometimes' '?>are <'not '?>in <constant-noun>, are <verb.git:verb.tense-past> to <adjective.git-action:common.prepend-an> <noun.git>",
-	"<current-command-name> takes <noun.synonym.option:noun.plural> <adjective.relevant> to the <command-name> <noun.synonym.command> to <verb.synonym.verify> what is <verb.git:verb.tense-past> and how",
+	"the <noun.git> to be <verb.git:verb.tense.past> can be <verb.synonym.supply:verb.tense.past> in several ways",
+	"the <command-option> <noun.synonym.option> can be used to <verb.git> <noun.git:common.prepend-an> for the <noun.git> that is <verb.git:verb.tense.past> by <adjective.git-action:common.prepend-an> <noun.git>",
+	"any <verb.git:verb.tense.present-participle> of <noun.git:common.prepend-an> that <verb.git:verb.tense.present> <noun.git:common.prepend-an> <adverb.synonym.immediately> after can be <verb.git:verb.tense.past> with <command-name>",
+	"after <verb.git:verb.tense.present-participle> <noun.git:noun.plural> to any <noun.git:noun.plural>, <subject> can <verb.git> the <noun.git> of the <noun.git:noun.plural>",
+	"after <current-command-name:common.prepend-an> (<verb.git:verb.tense.past> by <command-name><' 'conjunction.and-or' 'command-name?>) <verb.git:verb.tense.present> <noun.git:common.prepend-an>, <adverb.synonym.cleanly> <verb.git:verb.tense.past> <noun.git:noun.plural> are <verb.git:verb.tense.past> for <subject>, and <noun.git:noun.plural> that were <verb.git:verb.tense.past> during <verb.git:verb.tense.present-participle> are left in <verb.git:verb.tense.past:common.prepend-an> state",
+	"<multiple-nouns> <verb.git:verb.tense.past> by <noun.git:noun.plural> in the <located-noun>, but that <adverb.synonym.sometimes' '?>are <'not '?>in <constant-noun>, are <verb.git:verb.tense.past> to <adjective.git-action:common.prepend-an> <noun.git>",
+	"<current-command-name> takes <noun.synonym.option:noun.plural> <adjective.relevant> to the <command-name> <noun.synonym.command> to <verb.synonym.verify> what is <verb.git:verb.tense.past> and how",
 ]
 option-description [
-	"<verb.git> the <noun.git:noun.plural> of <determiner> <noun.git:noun.plural> that are <verb.git:verb.tense-past>",
-	"<conjunction.conditional> this <noun.synonym.option> is <verb.synonym.supply:verb.tense-past>, the <noun.git> prefixes <git-path> <conjunction.and-or> <git-path>",
-	"the <noun.git> <verb.synonym.will> <'not '?>be <verb.common:verb.tense-past> by <verb.git:verb.tense-past:common.prepend-an> <noun.git>",
-	"use <noun.git> to <verb.git> <git-path> to <verb.git:verb.tense-past:common.prepend-an> <noun.git>",
-	"with<'out'?> this <noun.synonym.option>, <current-command-name> <command-option> <verb.git:verb.tense-present> <noun.git:noun.plural> that <verb.git> the <verb.synonym.supply:verb.tense-past> <noun.git:noun.plural>",
+	"<verb.git> the <noun.git:noun.plural> of <determiner> <noun.git:noun.plural> that are <verb.git:verb.tense.past>",
+	"<conjunction.conditional> this <noun.synonym.option> is <verb.synonym.supply:verb.tense.past>, the <noun.git> prefixes <git-path> <conjunction.and-or> <git-path>",
+	"the <noun.git> <verb.synonym.will> <'not '?>be <verb.common:verb.tense.past> by <verb.git:verb.tense.past:common.prepend-an> <noun.git>",
+	"use <noun.git> to <verb.git> <git-path> to <verb.git:verb.tense.past:common.prepend-an> <noun.git>",
+	"with<'out'?> this <noun.synonym.option>, <current-command-name> <command-option> <verb.git:verb.tense.present> <noun.git:noun.plural> that <verb.git> the <verb.synonym.supply:verb.tense.past> <noun.git:noun.plural>",
 ]
