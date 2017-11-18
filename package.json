@@ -1,0 +1,25 @@
+{
+  "name": "baba-grammar-git-man-page-generator",
+  "version": "1.3.0",
+  "description": "Git man page generator grammar for Baba.",
+  "homepage": "https://git-man-page-generator.lokaltog.net/",
+  "repository": {
+    "type": "git",
+    "url": "Lokaltog/baba-grammar-git-man-page-generator"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Kim Silkebækken",
+    "email": "kim@silkebaekken.no",
+    "web": "https://silkebaekken.no/"
+  },
+  "main": "grammar.js",
+  "scripts": {
+    "compile": "baba grammar.baba --minify > grammar.js",
+    "prepare": "npm run compile"
+  },
+  "devDependencies": {
+    "baba-core": "^0.3.0",
+    "baba-grammar-common": "^1.2.0"
+  }
+}
